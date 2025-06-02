@@ -14,20 +14,28 @@
       <input type="text" id="name" required />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" required />
+      <input type="text" id="email" required />
 
       <label for="password">Password:</label>
       <input type="password" id="password" required />
 
       <button type="submit">Register</button>
+      <p id="error"></p>
     </form>
-
+    
     <div class="break"></div>
 
     <label for="search">Search Users:</label>
     <input type="text" id="search" placeholder="Search" />
-
-    <div id="list" class="list"></div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th> Name</th>
+          <th> Email</th>
+        </tr>
+      </thead>
+      <tbody id="list"></tbody>
+    </table>
   </div>
 
   <script src="./index.js"></script>
